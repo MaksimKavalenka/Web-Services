@@ -1,5 +1,5 @@
 
-package by.training.service;
+package by.training.service.impl;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -9,9 +9,8 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.ws.Action;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
-
-import by.training.service.domain.Expression;
-import by.training.service.domain.ObjectFactory;
+import by.training.service.Expression;
+import by.training.service.ObjectFactory;
 
 
 /**
@@ -35,8 +34,8 @@ public interface SOAPService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getResult", targetNamespace = "http://service.training.by/", className = "by.training.service.domain.GetResult")
-    @ResponseWrapper(localName = "getResultResponse", targetNamespace = "http://service.training.by/", className = "by.training.service.domain.GetResultResponse")
+    @RequestWrapper(localName = "getResult", targetNamespace = "http://service.training.by/", className = "by.training.service.GetResult")
+    @ResponseWrapper(localName = "getResultResponse", targetNamespace = "http://service.training.by/", className = "by.training.service.GetResultResponse")
     @Action(input = "http://service.training.by/SOAPService/getResultRequest", output = "http://service.training.by/SOAPService/getResultResponse")
     public double getResult(
         @WebParam(name = "expression", targetNamespace = "")

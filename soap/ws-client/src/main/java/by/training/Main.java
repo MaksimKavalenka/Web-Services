@@ -2,9 +2,9 @@ package by.training;
 
 import java.net.MalformedURLException;
 
-import by.training.service.SOAPService;
-import by.training.service.domain.Expression;
-import by.training.service.domain.Operation;
+import by.training.service.Expression;
+import by.training.service.Operation;
+import by.training.service.impl.SOAPService;
 import by.training.service.impl.SOAPServiceImplService;
 
 public class Main {

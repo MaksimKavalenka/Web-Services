@@ -6,17 +6,16 @@ import by.training.enumeration.Operation;
 
 public class Expression implements Serializable {
 
-    private static final long  serialVersionUID = -171117348370011489L;
+    private static final long serialVersionUID = -171117348370011489L;
 
-    private double             number1;
-    private double             number2;
-    private Operation operation;
+    private double            number1;
+    private double            number2;
+    private Operation         operation;
 
     public Expression() {
     }
 
-    public Expression(final double number1, final double number2,
-            final Operation operation) {
+    public Expression(final double number1, final double number2, final Operation operation) {
         this.number1 = number1;
         this.number2 = number2;
         this.operation = operation;

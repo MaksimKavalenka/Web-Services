@@ -1,5 +1,5 @@
 
-package by.training.service.domain;
+package by.training.service;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
